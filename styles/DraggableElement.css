@@ -1,0 +1,113 @@
+.draggable-element {
+  position: absolute;
+  user-select: none;
+  z-index: 1;
+  transition: box-shadow 0.2s ease;
+}
+
+.draggable-element.selected {
+  z-index: 2;
+}
+
+.draggable-element.selected::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border: 2px dashed #3498db;
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+.text-element {
+  padding: 8px;
+  min-width: 100px;
+  min-height: 30px;
+  background-color: transparent;
+  white-space: pre-wrap;
+  word-break: break-word;
+  cursor: move;
+}
+
+.element-controls {
+  position: absolute;
+  top: -35px;
+  right: 0;
+  display: flex;
+  gap: 5px;
+  background-color: white;
+  border-radius: 4px;
+  padding: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+}
+
+.element-controls button {
+  background-color: #3498db;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.rotation-handle {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: #3498db;
+  border-radius: 50%;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: grab;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.rotation-handle:active {
+  cursor: grabbing;
+}
+
+.image-container {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Image borders */
+.image-container.border-white {
+  border: 10px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container.border-black {
+  border: 5px solid black;
+}
+
+.image-container.border-polaroid {
+  border: 15px solid white;
+  border-bottom: 40px solid white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.image-container.border-polaroid::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 14px;
+  color: #555;
+}

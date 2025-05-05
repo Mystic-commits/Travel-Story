@@ -1,0 +1,144 @@
+.export-options-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.export-options-container {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  width: 700px;
+  max-width: 90vw;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.export-header {
+  margin-bottom: 30px;
+}
+
+.success-icon {
+  margin-bottom: 15px;
+  width: 60px;
+  height: 60px;
+}
+
+.export-header h2 {
+  color: #27ae60;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.export-header p {
+  color: #7f8c8d;
+  font-size: 16px;
+}
+
+.export-options {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.export-option {
+  flex: 1;
+  display: flex;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+}
+
+.export-option-icon {
+  margin-right: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pdf-icon {
+  background-color: rgba(231, 76, 60, 0.1);
+  color: #e74c3c;
+}
+
+.video-icon {
+  background-color: rgba(52, 152, 219, 0.1);
+  color: #3498db;
+}
+
+.export-option-content {
+  flex: 1;
+}
+
+.export-option-content h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.export-option-content p {
+  margin-bottom: 15px;
+  color: #7f8c8d;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.export-button {
+  padding: 10px 20px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.pdf-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.video-button {
+  background-color: #3498db;
+  color: white;
+}
+
+.export-progress {
+  margin: 20px 0;
+}
+
+.export-progress .progress-bar {
+  height: 8px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.export-progress .progress {
+  height: 100%;
+  background-color: #27ae60;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.export-message {
+  margin: 10px 0;
+  color: #2c3e50;
+}
+
+.close-button {
+  background-color: #7f8c8d;
+  color: white;
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-weight: 500;
+  border-radius: 4px;
+}

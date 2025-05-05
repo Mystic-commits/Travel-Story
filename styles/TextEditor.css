@@ -1,0 +1,113 @@
+.text-editor {
+  min-width: 300px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  z-index: 10;
+}
+
+.text-editor textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.text-editor textarea:focus {
+  border-color: #3498db;
+}
+
+.editor-tabs {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.editor-tab-content {
+  padding: 15px;
+}
+
+.editor-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.editor-row:last-child {
+  margin-bottom: 0;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.control-group label {
+  font-size: 12px;
+  color: #555;
+  font-weight: 500;
+}
+
+.control-group select,
+.control-group input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-width: 100px;
+}
+
+.control-group input[type="color"] {
+  padding: 2px;
+  height: 34px;
+}
+
+.button-group {
+  display: flex;
+  gap: 2px;
+}
+
+.button-group button {
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 6px 10px;
+}
+
+.button-group button.active {
+  background-color: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+.editor-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.save-button {
+  background-color: #27ae60;
+  color: white;
+  font-weight: 500;
+}
+
+.cancel-button {
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.icon {
+  font-size: 14px;
+  line-height: 1;
+}
