@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 
-=======
 # TravelStory
 
 TravelStory is a responsive React web application that allows users to create beautiful travel journals by arranging images and text on a canvas.
@@ -57,7 +55,3 @@ TravelStory is a responsive React web application that allows users to create be
 4. Click the "Save Journal" button to save your creation
 5. Choose to export as PDF or video
 
-## License
-
-MIT
->>>>>>> 07e7f1f (Add working files including components)
